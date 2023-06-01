@@ -1,6 +1,6 @@
 .main{
     position:relative;
-
+    color:#fff;
 }
 .main::before{
     content:"";
@@ -16,10 +16,22 @@
 .navbar{
     display:flex;
     flex-direction:row;
-    background-color:#712cf9;
+    background-color:#301a5c;
     align-items:center;
     border-radius:10px;
     height:50px;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap:wrap;
+  }
+  .navleft, .navright {
+    min-width: auto;
+    margin: 0;
+  }
+  .navitem {
+    width:50%;
+  }
 }
 .navleft{
     flex:2;
@@ -63,7 +75,7 @@ margin-left:20px;
     align-items:center;
     flex-direction:column;
     border-radius:10px;
-    background-color:#fbe4f0;
+    background-color:#313165;
     text-align:center;
 }
 .profile-image{
@@ -74,10 +86,10 @@ margin-left:20px;
     max-width:500px;
     height:auto;
     border-radius:5px;
-    background-color:#fbe4f0;
+    background-color:#313165;
 }
 #skills{
-    background-color:#fbe4f0;
+    background-color:#313165;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -87,7 +99,7 @@ margin-left:20px;
 }
 #projects {
     padding: 20px;
-    background-color:#fbe4f0;
+    background-color:#313165;
     margin-top:8px;
     border-radius:10px;
     display:flex;
@@ -100,7 +112,7 @@ margin-left:20px;
     flex-direction:column;
   }
   .project {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     display:inline;
   }
   
@@ -126,15 +138,18 @@ margin-left:20px;
     background-color: #59a9ff;
   }
 
+.foot{
+  margin-top:10px;
+  display:flex;
+  flex-direction:row;
+}
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #712cf9;
+  flex:auto;
+    background-color: #2d1955;
     color: #fff;
     padding: 5px;
     text-align: center;
+    border-radius:8px;
   }
 
 .contact-links {
@@ -150,7 +165,7 @@ footer {
   
   .contact-links a {
     text-decoration: none;
-    color: #333;
+    color:#fff;
     padding: 5px 10px;
     border: 1px solid #333;
     border-radius: 5px;
@@ -161,8 +176,7 @@ footer {
     color: #fff;
   }
   #contact{
-    background-color:#fbe4f0;
-    margin-top:8px;
+    background-color:#313165;
     border-radius:10px;
     padding-left:10px;
     padding-bottom:150px;
